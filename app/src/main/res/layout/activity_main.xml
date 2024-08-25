@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/Phinma_Logo" />
 
     <TextView
-        android:id="@+id/tvLoginText"
+        android:id="@+id/tvAppText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hk Attendance App"
