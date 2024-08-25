@@ -11,6 +11,24 @@
     android:background="@drawable/hkappbg"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="115dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-130dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/Phinma_Logo" />
+
+    <TextView
+        android:id="@+id/tvLoginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hk Attendance App"
+        android:textAlignment="center"
+        android:textColor="@color/dark_green"
+        android:textSize="38sp"
+        android:textStyle="bold"/>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +51,7 @@
                 android:text="Login"
                 android:textAlignment="center"
                 android:textColor="@color/dark_green"
-                android:textSize="36sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -42,36 +60,36 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/custom_edittext"
-                android:padding="8dp"
-                android:hint="Username: "
                 android:drawableLeft="@drawable/baseline_person_24"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:hint="Username: "
+                android:padding="8dp"
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:inputType="textPassword"
                 android:background="@drawable/custom_edittext"
-                android:padding="8dp"
-                android:hint="Password: "
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawableRight="@drawable/baseline_remove_red_eye_24_green"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:hint="Password: "
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/btLogin"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:text="Login"
-                android:textSize="18sp"
-                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/dark_green"
-                app:cornerRadius = "20dp"/>
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
