@@ -8,16 +8,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/hkappbg"
+    android:background="@drawable/img"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="115dp"
         android:layout_height="120dp"
-        android:layout_marginTop="-130dp"
-        android:layout_marginBottom="50dp"
-        app:srcCompat="@drawable/Phinma_Logo" />
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/phinmalogo" />
 
     <TextView
         android:id="@+id/tvAppText"
