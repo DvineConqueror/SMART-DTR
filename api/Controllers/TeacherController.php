@@ -15,21 +15,32 @@ class TeacherController extends Controller
 
     public function store(Request $request)
     {   
-        $validatedData = $request->validate([
-            'firstname' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:teachers',
-            'password' => 'required|string|min:8',
-            'teacher_id' => 'required|string|unique:teachers',
-            'mobile_number' => 'required|string',
-            'date_of_birth' => 'required|date',
-            'sex' => 'required|in:male,female,other',
-        ]);
-        // Hash the password before saving
-        $validatedData['password'] = Hash::make($validatedData['password']);
+        try{
+            $validatedData = $request->validate([
+                'firstname' => 'required|string|max:255',
+                'lastname' => 'required|string|max:255',
+                'email' => 'required|string|email|max:255|unique:teachers',
+                'password' => 'required|string|min:8',
+                'teacher_id' => 'required|string|unique:teachers',
+                'mobile_number' => 'required|string',
+                'date_of_birth' => 'required|date',
+                'sex' => 'required|in:male,female,other',
+            ]);
+            // Hash the password before saving
+            $validatedData['password'] = Hash::make($validatedData['password']);
 
-        // Attempt to create the student
-        $teacher = Teacher::create($validatedData);
+            // Attempt to create the student
+            $teacher = Teacher::create($validatedData);
+
+            //return the created student
+            return response()->json($student,201);
+        }catch (\Exception $e){
+            //exception message
+            \Log::error($e->getMessage());
+
+            //response if creating student failed
+            return response()->json('Failed to create student.',201);
+        }
     }
 
     public function show($id)
