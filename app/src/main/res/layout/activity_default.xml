@@ -7,13 +7,118 @@
     android:layout_height="match_parent"
     tools:context=".DefaultActivity">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="175dp"
+        android:layout_height="174dp"
+        app:srcCompat="@drawable/img_1"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ellipse11"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ellipse12"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ellipse13"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="446dp"
+        android:layout_height="618dp"
+        app:srcCompat="@drawable/ellipse10"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/smart_dtr"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="253dp" />
+
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="162dp"
-        android:layout_height="106dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/TeacherId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher ID"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="216dp"
+        android:layout_height="26dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableRight="@drawable/info"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <TextView
+        android:id="@+id/mobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext"
+        android:drawableRight="@drawable/info"
+        android:ems="10"
+        android:inputType=""
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <TextView
+        android:id="@+id/birthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
