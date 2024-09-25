@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">HK-Attendance</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="title_activity_homepage_teacher">activity_homepage_teacher</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="account_details">Account Details</string>
+    <string name="name_label">Name:</string>
+    <string name="student_id_label">Student ID:</string>
+    <string name="email_label">E-mail:</string>
+    <string name="mobile_number_label">Mobile Number:</string>
+    <string name="date_of_birth_label">Date of Birth:</string>
+    <string name="year_level_label">Year Level:</string>
+    <string name="sex_label">Sex:</string>
+    <string name="dtr_image_description">DTR Image</string>
+    <string name="small_logo_description">Small Logo</string>
+    <string name="smart_image_description">Smart Image</string>
+    <string name="settingsIcon">Settings Icon</string>
+    <string name="dtrIcon">Time Line Icon</string>
+    <string name="homeIcon">Home Icon</string>
+    <string name="wave3_top">wavetop</string>
+    <string name="wave1">wave1</string>
+    <string name="logo_name">SMART DTR</string>
+    <string name="wave_buttom">Wave Buttom</string>
+    <string name="title_activity_home_page_smart">activity_home_page_smart</string>
+
+
 </resources>
