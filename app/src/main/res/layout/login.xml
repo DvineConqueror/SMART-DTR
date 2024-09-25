@@ -9,8 +9,10 @@
         android:id="@+id/imageView15"
         android:layout_width="191dp"
         android:layout_height="181dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_1"
-        tools:layout_editor_absoluteX="110dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="90dp" />
 
     <ImageView
@@ -19,15 +21,18 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ellipse11"
         tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="90dp" />
+        tools:layout_editor_absoluteY="90dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/smart_dtr"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="283dp" />
+        tools:layout_editor_absoluteY="285dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView18"
@@ -35,7 +40,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ellipse12"
         tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="214dp" />
+        tools:layout_editor_absoluteY="214dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView19"
@@ -43,7 +49,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ellipse13"
         tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="178dp" />
+        tools:layout_editor_absoluteY="178dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -51,7 +58,8 @@
         android:layout_height="622dp"
         app:srcCompat="@drawable/ellipse10"
         tools:layout_editor_absoluteX="-31dp"
-        tools:layout_editor_absoluteY="373dp" />
+        tools:layout_editor_absoluteY="373dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvEmail"
@@ -62,7 +70,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="469dp" />
+        tools:layout_editor_absoluteY="469dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -71,6 +80,7 @@
         android:background="@drawable/custom_edittext"
         android:ems="10"
         android:inputType="textEmailAddress"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="36dp"
         tools:layout_editor_absoluteY="503dp" />
 
@@ -83,16 +93,18 @@
         android:textSize="20dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="605dp" />
+        tools:layout_editor_absoluteY="605dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
         android:drawableRight="@drawable/baseline_remove_red_eye_24"
         android:ems="10"
         android:inputType="textPassword"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="640dp" />
 
@@ -105,5 +117,6 @@
         android:textStyle="bold"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="743dp" />
+        tools:layout_editor_absoluteY="743dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
