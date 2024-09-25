@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_create_login">
+
+    <ImageView
+        android:id="@+id/top_ellipse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-63dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_ellipse" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:paddingTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/lilita_one"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="SMART DTR"
+        android:textColor="@color/yellow"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tag_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Make Daily Time Record management more efficient and accessible"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:text="Create Account"
+        android:paddingRight="70dp"
+        android:paddingLeft="70dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:strokeColor="@color/yellow"
+        app:strokeWidth="2dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="@color/brightred"
+        android:paddingLeft="109dp"
+        android:paddingTop="10dp"
+        android:paddingRight="109dp"
+        android:paddingBottom="10dp"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/brightred"
+        app:strokeWidth="2dp" />
+
+
+</RelativeLayout>
