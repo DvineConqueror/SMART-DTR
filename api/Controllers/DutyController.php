@@ -8,7 +8,14 @@ use Illuminate\Support\Carbon;
 
 class DutyController extends Controller
 {
-    // Store a new duty/appointment
+
+    //GET all duty
+    public function index()
+    {
+        return Duty::all();
+    }
+
+    //CREATE a new duty and upload it to the database
     public function store(Request $request)
     {
         try{
@@ -23,13 +30,15 @@ class DutyController extends Controller
             'status' => 'required|in:pending,finished,canceled',
         ]);
 
-        // Attempt to create the duty
+        //Attempt to create the duty
         $duty = duty::create($validatedData);
 
         //return the created duty
         return response()->json($duty,201);
+        
         }catch (\Exception $e){
-            //exception message
+
+            //Exception message
             \Log::error($e->getMessage());
 
             //response if creating duty failed
@@ -37,21 +46,21 @@ class DutyController extends Controller
         }
     }
 
-    // Get upcoming duties/appointments
+    //GET upcoming duties
     public function getUpcomingDuties()
     {
         $upcomingDuties = Duty::upcoming()->get();
         return response()->json($upcomingDuties);
     }
 
-    // Get completed duties/appointments
+    //GET completed duties
     public function getCompletedDuties()
     {
         $completedDuties = Duty::completed()->get();
         return response()->json($completedDuties);
     }
 
-    // Update a duty/appointment
+    //UPDATE a duty
     public function update(Request $request, $id)
     {
         $duty = Duty::findOrFail($id);
@@ -72,7 +81,7 @@ class DutyController extends Controller
         return response()->json(['message' => 'Duty updated successfully']);
     }
 
-    // Delete a duty/appointment
+    //Delete a duty
     public function destroy($id)
     {
         $duty = Duty::findOrFail($id);
