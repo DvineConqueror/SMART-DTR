@@ -31,10 +31,6 @@
             android:name=".activity_home_pagee"
             android:exported="false" />
         <activity
-            android:name=".ui.login.activity_home_page_smart"
-            android:exported="false"
-            android:label="@string/title_activity_home_page_smart" />
-        <activity
             android:name=".activity_home_page_teacher"
             android:exported="false" />
         <activity
@@ -47,10 +43,6 @@
             android:name=".activity_home_page"
             android:exported="false" />
         <activity
-            android:name=".ui.login.activity_homepage_teacher"
-            android:exported="false"
-            android:label="@string/title_activity_homepage_teacher" />
-        <activity
             android:name=".activity_create_login"
             android:exported="false" />
         <activity
@@ -60,14 +52,12 @@
             android:name=".DefaultActivity"
             android:exported="false"
             android:label="Default"
-            android:screenOrientation="portrait">
             >
         </activity>
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
-            android:label="Loading"
-            android:screenOrientation="portrait">
+            android:label="Loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -77,18 +67,18 @@
         <activity
             android:name=".CreateUserActivity"
             android:exported="false"
-            android:label="Create"
-            android:screenOrientation="portrait" />
+            android:label="Create"/>
+
         <activity
             android:name=".HomeActivity"
             android:exported="false"
-            android:label="Home"
-            android:screenOrientation="portrait" />
+            android:label="Home"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="Login"
-            android:screenOrientation="portrait" />
+            android:label="Login"/>
+
 
         <meta-data
             android:name="preloaded_fonts"
