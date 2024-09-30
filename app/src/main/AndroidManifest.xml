@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HKAttendance"
         tools:targetApi="31">
         <activity
+            android:name=".activity_duty_schedule_teacherr"
+            android:exported="false" />
+        <activity
             android:name=".activity_duty_schedule_teacher"
             android:exported="false" />
         <activity
