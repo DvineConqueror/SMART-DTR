@@ -8,48 +8,18 @@
     tools:context=".activity_home_page_teacher">
 
     <ImageView
-        android:id="@+id/wave3_top"
+        android:id="@+id/top_wave"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="-25dp"
-        android:contentDescription="wavetop"
+        android:layout_height="250dp"
+        android:contentDescription="top_wave"
         android:scaleType="fitXY"
-        android:src="@drawable/wave2_top" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="137dp"
-        android:layout_height="108dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/small_logo"
-        android:contentDescription="Small logo"/>
-
-
-    <ImageView
-        android:id="@+id/smart"
-        android:layout_width="116dp"
-        android:layout_height="102dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/smart_img"
-        android:contentDescription="smart image"/>
-
-    <ImageView
-        android:id="@+id/dtr"
-        android:layout_width="82dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/dtr_img"
-        android:contentDescription="dtr image"/>
+        android:src="@drawable/top_wave" />
 
     <Button
         android:id="@+id/btn_make_appointment"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:layout_below="@+id/wave3_top"
+        android:layout_below="@+id/top_wave"
         android:backgroundTint="@color/blue"
         android:text="Make an Appointment"
         android:textColor="@android:color/white"

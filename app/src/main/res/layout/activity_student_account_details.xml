@@ -9,48 +9,19 @@
     >
 
     <ImageView
-        android:id="@+id/wave3_top"
+        android:id="@+id/top_wave2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_height="250dp"
+        android:layout_marginTop="-29dp"
+        android:contentDescription="top_wave2"
         android:scaleType="fitXY"
-        android:src="@drawable/wave3"
-        android:contentDescription="@string/wave3_top"/>
-
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="137dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/small_logo"
-        android:contentDescription="@string/small_logo_description"/>
-
-
-    <ImageView
-        android:id="@+id/smart"
-        android:layout_width="116dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/smart_img"
-        android:contentDescription="@string/smart_image_description"/>
-
-    <ImageView
-        android:id="@+id/dtr"
-        android:layout_width="82dp"
-        android:layout_height="71dp"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/dtr_img"
-        android:contentDescription="@string/dtr_image_description"/>
+        android:src="@drawable/topwave_2" />
 
     <TextView
         android:id="@+id/account_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/wave3_top"
+        android:layout_below="@id/top_wave2"
         android:gravity="center"
         android:text="@string/account_details"
         android:textColor="@color/blue"
@@ -75,7 +46,7 @@
         android:layout_below="@id/profile_picture"
         android:layout_centerHorizontal="true"
         android:orientation="vertical"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="30dp">
 
         <LinearLayout
             android:layout_width="wrap_content"

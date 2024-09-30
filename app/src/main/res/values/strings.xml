@@ -30,6 +30,19 @@
     <string name="logo_name">SMART DTR</string>
     <string name="wave_buttom">Wave Buttom</string>
     <string name="title_activity_home_page_smart">activity_home_page_smart</string>
+    <string name="wave_top">wavetop</string>
+    <string name="logo">logo</string>
+    <string name="tagline">Make Daily Time Record management more efficient and accessible"</string>
+    <string name="wavebottom">wavebottom</string>
+    <string name="btn_student">Student</string>
+    <string name="btn_teacher">Teacher</string>
+    <string name="profile_picture">profile_picture</string>
+    <string name="top_wave">top_wave</string>
+    <string name="duty_schedule_label">Duty Schedule</string>
+    <string name="upcoming_date1">Pending: September 5, 2024</string>
+
+
+
 
 
 </resources>
