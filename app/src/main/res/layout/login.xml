@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <ImageView
         android:id="@+id/imageView15"
@@ -19,47 +22,59 @@
         android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ellipse11"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="90dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
         app:srcCompat="@drawable/smart_dtr"
-        tools:layout_editor_absoluteY="285dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="106dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ellipse12"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="214dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
         app:srcCompat="@drawable/ellipse13"
-        tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="178dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="472dp"
-        android:layout_height="622dp"
+        android:layout_width="409dp"
+        android:layout_height="616dp"
         app:srcCompat="@drawable/ellipse10"
-        tools:layout_editor_absoluteX="-31dp"
-        tools:layout_editor_absoluteY="373dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="342dp" />
 
     <TextView
         android:id="@+id/tvEmail"
@@ -69,12 +84,12 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="469dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="469dp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/etEmailAddress"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_edittext"
@@ -92,12 +107,12 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="605dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="605dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/etPassword"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
@@ -109,14 +124,14 @@
         tools:layout_editor_absoluteY="640dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btLogin"
         android:layout_width="209dp"
         android:layout_height="58dp"
         android:backgroundTint="#041AE0"
         android:text="Log In"
-        android:textStyle="bold"
         android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="743dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="743dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

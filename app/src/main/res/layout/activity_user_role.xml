@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_user_role">
+    tools:context=".activity_user_role"
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
 
     <ImageView
@@ -71,7 +73,7 @@
 
 
     <Button
-        android:id="@+id/btn_student"
+        android:id="@+id/btnStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tagline"
@@ -89,7 +91,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn_teacher"
+        android:id="@+id/btnTeacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tagline"

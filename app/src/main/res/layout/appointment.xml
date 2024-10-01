@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#FFFFFF"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <ImageView
         android:id="@+id/imageView21"
@@ -34,17 +36,23 @@
         tools:layout_editor_absoluteX="218dp"
         tools:layout_editor_absoluteY="60dp" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:text="<"
-        android:textSize="45dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="32dp" />
 
+    <ImageButton
+        android:id="@+id/backButton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:contentDescription="backToHome"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491"
+        tools:ignore="MissingConstraints" />
 
     <CalendarView
         android:id="@+id/calendarView"
@@ -122,9 +130,9 @@
         android:layout_height="278dp"
         android:background="#F86232"
         android:backgroundTint="#F07046"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="590dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="590dp">
 
         <TextView
             android:id="@+id/textView11"
@@ -137,8 +145,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.104"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="158dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="158dp" />
 
         <TextView
             android:id="@+id/textView8"
@@ -151,8 +159,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="18dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="18dp" />
 
         <TextView
             android:id="@+id/textView10"
@@ -165,8 +173,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.141"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="117dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="117dp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -179,8 +187,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.121"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="69dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="69dp" />
 
         <Button
             android:id="@+id/button6"
@@ -193,8 +201,8 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="210dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="210dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

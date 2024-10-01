@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private var isPasswordVisible: Boolean = false
-    lateinit var etUsername : EditText
+    lateinit var etEmailAddress : EditText
     lateinit var etPassword : EditText
     lateinit var btLogin : Button
 
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btLogin.setOnClickListener(View.OnClickListener {
-            if (binding.etUsername.text.toString() == "user" && binding.etPassword.text.toString() == "1234"){
+            if (binding.etEmailAddress.text.toString() == "user" && binding.etPassword.text.toString() == "1234"){
                 Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(this, "Login Failed!", Toast.LENGTH_SHORT).show()
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             // Hide the password
             binding.etPassword.transformationMethod = PasswordTransformationMethod.getInstance()
             binding.etPassword.setCompoundDrawablesWithIntrinsicBounds(
-                R.drawable.baseline_lock_24, 0, R.drawable.baseline_remove_red_eye_24_green, 0
+                R.drawable.baseline_lock_24, 0, R.drawable.baseline_remove_green_eye_24, 0
             )
         } else {
             // Show the password
