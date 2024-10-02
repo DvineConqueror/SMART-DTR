@@ -66,13 +66,31 @@ class TeacherController extends Controller
         $request->validate([
             'firstname' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:teachers',
-            'password' => 'required|string|min:8',
-            'teacher_id' => 'required|string|unique:teachers',
             'mobile_number' => 'required|string',
             'date_of_birth' => 'required|date',
             'sex' => 'required|in:male,female,other',
         ]);
+
+        //Checks if the password is above the minimum of 8 char
+        if (strlen($request->password) < 8) {
+            return response()->json([
+                'message' => 'Password must be at least 8 characters long.',
+            ], 400);
+        }
+
+        //Checks if the email already exists
+        if (Teacher::where('email', $request->email)->exists()) {
+            return response()->json([
+                'message' => 'Email is already in use. Please use a different email.',
+            ], 400);
+        }
+
+        //Checks if the student ID already exists
+        if (Teacher::where('teacher_id', $request->teacher_id)->exists()) {
+            return response()->json([
+                'message' => 'Teacher ID is already in use. Please use a different student ID.',
+            ], 400);
+        }
 
         //CREATE the user(teacher)
         $teacher = Teacher::create([
@@ -85,7 +103,7 @@ class TeacherController extends Controller
             'date_of_birth' => $request->date_of_birth,
             'sex' => $request->sex,
         ]);
-    
+
         if($teacher)
         {
              // Generate a Sanctum token for the teacher
@@ -131,31 +149,73 @@ class TeacherController extends Controller
 
     // GET user(teacher) by their id/GET specific user(teacher)
     public function show($id)
-    {
+    {      
+        // Find the teacher by ID
+        $teacher = Teacher::find($id);
+
+        // Check if the teacher exists
+        if (!$teacher) {
+            return response()->json([
+                'message' => 'Teacher not found.',
+            ], 404);
+        }
+        
         return Teacher::findOrFail($id);
     }
 
-    // UPDATE the user(teacher)
+    // UPDATE user (teacher)
     public function update(Request $request, $id)
     {
-        $teacher = Teacher::findOrFail($id);
+        // Find the teacher by ID
+        $teacher = Teacher::find($id);
+
+        // Check if the teacher exists
+        if (!$teacher) {
+            return response()->json([
+                'message' => 'Teacher not found.',
+            ], 404);
+        }
+
+        // Check if the request contains a password
         if ($request->has('password')) {
-            // Hash the new password
+            // Custom validation for password length
+            if (strlen($request->password) < 8) {
+                return response()->json([
+                    'message' => 'Password must be at least 8 characters long.',
+                ], 400);
+            }
+
+            // Hash the password if valid
             $request->merge(['password' => Hash::make($request->password)]);
         }
 
-        // Update the teacher with the new data
-        $teacher->update($request->all());
-
-        return response()->json([
-            'message' => 'Teacher updated successfully',
-            'data' => $teacher,
-        ], 200);
+        // Attempt to update the teacher
+        if ($teacher->update($request->all())) {
+            return response()->json([
+                'message' => 'Teacher updated successfully',
+                'data' => $student,
+            ], 200);
+        } else {
+            return response()->json([
+                'message' => 'Failed to update the teacher.',
+            ], 500);
+        }
     }
 
     //DELETE the user(teacher)
     public function destroy($id)
-    {
+    {   
+
+        // Find the teacher by ID
+        $teacher = Teacher::find($id);
+
+        // Check if the teacher exists
+        if (!$teacher) {
+            return response()->json([
+                'message' => 'Teacher not found.',
+            ], 404);
+        }
+
         Teacher::destroy($id);
 
         return response()->json([
