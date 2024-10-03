@@ -21,7 +21,6 @@ Route::prefix('students')->group(function () {
 
     // Sanctum protected routes
     Route::middleware(['auth:sanctum'])->group(function () {
-        Route::get('/get', [StudentController::class, 'index']);          //GET all user(student) with token
         Route::post('/logout', [StudentController::class, 'logout']);
         Route::get('/student/profile', [StudentController::class, 'profile']);
     });
@@ -40,7 +39,6 @@ Route::prefix('teachers')->group(function () {
     
     // Sanctum protected routes
     Route::middleware(['auth:sanctum'])->group(function () {
-        Route::get('/', [TeacherController::class, 'index']);          //GET all user(teacher) with token
         Route::post('/logout', [TeacherController::class, 'logout']);
         Route::get('/teacher/profile', [TeacherController::class, 'profile']);
     });
