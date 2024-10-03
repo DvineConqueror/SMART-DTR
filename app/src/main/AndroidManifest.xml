@@ -44,8 +44,13 @@
             android:name=".activity_home_page"
             android:exported="false" />
         <activity
-            android:name=".activity_create_login"
-            android:exported="false" />
+            android:name=".ActivityCreateLogin"
+            android:exported="false"
+            android:parentActivityName=".activity_user_role">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activity_user_role" />
+        </activity>
         <activity
             android:name=".activity_selecting_role"
             android:exported="false" />

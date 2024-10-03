@@ -20,15 +20,16 @@ class activity_user_role : AppCompatActivity() {
         supportActionBar?.hide()
 
         val btnStudent: Button = findViewById(R.id.btnStudent)
+        val btnTeacher: Button = findViewById(R.id.btnTeacher)
+
         btnStudent.setOnClickListener{
-            val intent = Intent(this, activity_create_login::class.java)
+            val intent = Intent(this, ActivityCreateLogin::class.java)
             startActivity(intent)
         }
 
-        val btnTeacher: Button = findViewById(R.id.btnTeacher)
         btnTeacher.setOnClickListener{
-            val intent2 = Intent(this, activity_create_login::class.java)
-            startActivity(intent2)
+            val intent = Intent(this, ActivityCreateLogin::class.java)
+            startActivity(intent)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
