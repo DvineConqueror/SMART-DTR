@@ -2,17 +2,17 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="home"
-        android:id="@+id/home"
+    <item android:title="Home"
+        android:id="@+id/home_btn"
         android:icon="@drawable/baseline_home_24"
         />
 
-    <item android:title="appointment"
-        android:id="@+id/appointment"
+    <item android:title="Appointment"
+        android:id="@+id/appointment_btn"
         android:icon="@drawable/baseline_calendar_month_24"
         />
 
-    <item android:title="menu_btn"
+    <item android:title="Menu"
         android:id="@+id/menu_btn"
         android:icon="@drawable/baseline_menu_24"
         />

@@ -1,6 +1,8 @@
 package com.example.hk_attendance
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.hk_attendance.databinding.ActivityMainBinding
@@ -19,8 +21,8 @@ class MainActivity : AppCompatActivity() {
 
             when(it.itemId){
 
-                R.id.home ->replaceFragment(home())
-                R.id.appointment ->replaceFragment(appointment())
+                R.id.home_btn ->replaceFragment(home())
+                R.id.appointment_btn ->replaceFragment(appointment())
 
                 else->{
 
