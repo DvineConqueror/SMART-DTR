@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="home"
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+    <item android:title="appointment"
+        android:id="@+id/appointment"
+        android:icon="@drawable/baseline_calendar_month_24"
+        />
+
+    <item android:title="menu_btn"
+        android:id="@+id/menu_btn"
+        android:icon="@drawable/baseline_menu_24"
+        />
+</menu>

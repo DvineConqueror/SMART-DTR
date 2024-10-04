@@ -40,9 +40,8 @@
     <string name="top_wave">top_wave</string>
     <string name="duty_schedule_label">Duty Schedule</string>
     <string name="upcoming_date1">Pending: September 5, 2024</string>
-
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
