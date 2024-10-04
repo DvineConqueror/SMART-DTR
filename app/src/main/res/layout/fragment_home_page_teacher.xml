@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home_page_teacher">
+
+    <ImageView
+        android:id="@+id/top_wave"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/top_wave"
+        />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="160dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Make an Appointment"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/upcoming_duty_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom= "80dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="center"
+        android:text="Upcoming Duty"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/yellow"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp"
+        />
+
+    <TextView
+        android:id="@+id/finished_duty_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="center"
+        android:text="Finished Duty"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/yellow"
+        android:layout_gravity="center"
+        android:layout_marginTop="230dp"
+        app:cardCornerRadius="15dp"
+        />
+
+</FrameLayout>
+
