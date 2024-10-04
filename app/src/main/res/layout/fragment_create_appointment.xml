@@ -17,17 +17,17 @@
         android:layout_gravity="center"
         android:layout_marginBottom="330dp"
         app:srcCompat="@drawable/vector"
-        />
+        tools:ignore="ContentDescription" />
 
     <ImageView
             android:id="@+id/imageView22"
             android:layout_width="100dp"
             android:layout_height="80dp"
             android:layout_marginBottom="330dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/img_1"
-            />
+        tools:ignore="ContentDescription" />
 
 
     <ImageView
@@ -35,21 +35,23 @@
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="330dp"
-        app:srcCompat="@drawable/group_76" />
+        app:srcCompat="@drawable/group_76"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/backButton5"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginRight="150dp"
+        android:layout_marginEnd="150dp"
         android:layout_marginBottom="350dp"
         android:background="@android:color/transparent"
         android:contentDescription="backToHome"
         android:scaleType="fitCenter"
-        android:src="@drawable/baseline_arrow_back_24" />
+        android:src="@drawable/baseline_arrow_back_24"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView6"
@@ -60,20 +62,23 @@
         android:fontFamily="@font/alfa_slab_one"
         android:text="Make an Appointment"
         android:textColor="#1604F4"
-        android:textSize="25dp" />
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
 
     <CalendarView
         android:id="@+id/calendarView"
         style="CustomCalendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="271dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="70dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="90dp"
         android:background="#F86232"
         android:backgroundTint="#F07046"
         tools:ignore="MissingConstraints"
@@ -88,36 +93,11 @@
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="17dp"
-            tools:layout_editor_absoluteY="31dp" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Time"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintHorizontal_bias="0.057"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="73dp" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Room"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="152dp" />
+            tools:ignore="HardcodedText,SpUsage"
+            tools:layout_editor_absoluteY="149dp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -125,28 +105,104 @@
             android:layout_height="wrap_content"
             android:text="Subject"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintHorizontal_bias="0.054"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="109dp" />
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteY="16dp" />
 
         <Button
             android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
             android:backgroundTint="#0008E2"
-            android:text="Create"
+            android:text="Save"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="192dp" />
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteY="204dp" />
+
+        <Spinner
+            android:id="@+id/spinner0"
+            android:layout_width="97dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="97dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="99dp" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="149dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="412dp"
+        android:layout_height="85dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rectangle_bottom"
+        app:itemIconSize="50dp"
+        app:itemIconTint="@color/white"
+        app:menu="@menu/bottom_nav_menu" />
 
 </FrameLayout>
