@@ -78,46 +78,11 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="214dp" />
 
-
-    <EditText
-        android:id="@+id/etLastname"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:background="@drawable/custom_edittext"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="290dp" />
-
     <TextView
-        android:id="@+id/tvFirstname"
+        android:id="@+id/tvTeacherId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Firstname"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="350dp" />
-
-    <EditText
-        android:id="@+id/etFirstname"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:background="@drawable/custom_edittext"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="377dp" />
-
-    <TextView
-        android:id="@+id/tvLastname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lastname"
+        android:text="Teacher ID"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -126,21 +91,67 @@
         tools:layout_editor_absoluteY="263dp" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etTeacherId"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_edittext"
         android:ems="10"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="463dp" />
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="290dp" />
 
     <TextView
-        android:id="@+id/tvEmail"
+        android:id="@+id/tvMobileNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="Mobile Number"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="text"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <EditText
+        android:id="@+id/etSex"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="text"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="531dp" />
+
+    <TextView
+        android:id="@+id/tvDateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -149,62 +160,25 @@
         tools:layout_editor_absoluteY="436dp" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etDateOfBirth"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
-        android:drawableRight="@drawable/baseline_remove_red_eye_24"
         android:ems="10"
-        android:inputType="textPassword"
+        android:inputType="date"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="549dp" />
-
-    <TextView
-        android:id="@+id/tvPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="522dp" />
-
-    <EditText
-        android:id="@+id/etPasswordConfirm"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:background="@drawable/custom_edittext"
-        android:drawableRight="@drawable/baseline_remove_red_eye_24"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="639dp" />
-
-    <TextView
-        android:id="@+id/tvPasswordConfirm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Confirm Password"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="612dp" />
+        tools:layout_editor_absoluteY="467dp" />
 
     <Button
-        android:id="@+id/btNext"
+        android:id="@+id/btSignup"
         android:layout_width="wrap_content"
         android:layout_height="58dp"
         android:backgroundTint="#041AE0"
-        android:text="Next"
+        android:text="Create Account"
         android:textSize="25dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="715dp" />
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="644dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
