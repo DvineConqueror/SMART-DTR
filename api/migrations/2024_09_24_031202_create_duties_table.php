@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -10,13 +9,14 @@ class CreateDutiesTable extends Migration
     {
         Schema::create('duties', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('student_id')->constrained()->onDelete('cascade');
-            $table->date('date');
-            $table->time('time');
+            $table->foreignId('teacher_id')->constrained('teachers')->onDelete('cascade');
+            $table->foreignId('student_id')->nullable()->constrained('students')->onDelete('cascade');
             $table->string('subject');
-            $table->string('teacher');
             $table->string('room');
-            $table->enum('status', ['upcoming', 'completed'])->default('upcoming');
+            $table->date('date');
+            $table->time('start_time');
+            $table->time('end_time');
+            $table->enum('status', ['pending', 'finished', 'canceled'])->default('pending');
             $table->timestamps();
         });
     }

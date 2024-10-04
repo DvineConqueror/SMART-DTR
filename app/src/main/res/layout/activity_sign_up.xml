@@ -5,36 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFFFFFF"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".CreateUserActivity">
+
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="157dp"
         android:layout_height="149dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="40dp" />
-
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="475dp"
-        android:layout_height="797dp"
+        android:layout_width="510dp"
+        android:layout_height="804dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ellipse10"
         tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="264dp" />
+        tools:layout_editor_absoluteY="256dp" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/smart_dtr"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="198dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -51,16 +61,16 @@
     <EditText
         android:id="@+id/editTextTextPassword3"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
         android:drawableRight="@drawable/baseline_remove_red_eye_24"
         android:ems="10"
-        android:hint="  Password"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.565"
+        android:hint="  Enter your confirmed password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="730dp" />
+        tools:layout_editor_absoluteY="716dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -77,11 +87,11 @@
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
         android:drawableRight="@drawable/baseline_remove_red_eye_24"
         android:ems="10"
-        android:hint="  Password"
+        android:hint="  Enter your password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,12 +113,12 @@
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
-        android:drawableRight="@drawable/info"
         android:ems="10"
+        android:hint="  Please enter your email"
         android:inputType="text"
-        android:text=""
+        android:labelFor="@id/Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,11 +140,12 @@
     <EditText
         android:id="@+id/etFirstName"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
-        android:drawableRight="@drawable/info"
         android:ems="10"
+        android:hint="  Enter your first name"
         android:inputType="text"
+        android:labelFor="@id/textView3"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.226"
@@ -158,12 +169,12 @@
     <EditText
         android:id="@+id/edtLastName"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
-        android:drawableRight="@drawable/info"
         android:ems="10"
-        android:hint=""
+        android:hint="  Enter your last name"
         android:inputType="text"
+        android:labelFor="@id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
@@ -174,13 +185,15 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="354dp"
+        android:layout_marginStart="376dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#0104C1"
         android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="5.0"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="730dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView8"

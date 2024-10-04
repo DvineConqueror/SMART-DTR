@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appointment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:id="@+id/top_wave"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="@string/top_wave"
+            android:scaleType="fitXY"
+            android:src="@drawable/top_wave" />
+
+        <TextView
+            android:id="@+id/duty_schedule_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="140dp"
+            android:text="@string/duty_schedule_label"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

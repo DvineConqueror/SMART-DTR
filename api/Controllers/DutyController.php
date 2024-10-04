@@ -4,56 +4,89 @@ namespace App\Http\Controllers;
 
 use App\Models\Duty;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class DutyController extends Controller
 {
+
+    //GET all duty
     public function index()
     {
-        $duties = Duty::with('student')->get();
-        return response()->json($duties);
+        return Duty::all();
     }
 
+    //CREATE a new duty and upload it to the database
     public function store(Request $request)
     {
-        $request->validate([
-            'student_id' => 'required|exists:students,id',
-            'date' => 'required|date',
-            'time' => 'required|date_format:H:i',
+        try{
+        $validatedData = $request->validate([
+            'teacher_id' => 'required|exists:teachers,id',
+            'student_id' => 'nullable|exists:students,id',
             'subject' => 'required|string|max:255',
-            'teacher' => 'required|string|max:255',
             'room' => 'required|string|max:255',
+            'date' => 'required|date',
+            'start_time' => 'required|date_format:H:i',
+            'end_time' => 'required|date_format:H:i|after:start_time',
+            'status' => 'required|in:pending,finished,canceled',
         ]);
 
-        $duty = Duty::create($request->all());
-        return response()->json($duty, 201);
+        //Attempt to create the duty
+        $duty = duty::create($validatedData);
+
+        //return the created duty
+        return response()->json($duty,201);
+        
+        }catch (\Exception $e){
+
+            //Exception message
+            \Log::error($e->getMessage());
+
+            //response if creating duty failed
+            return response()->json('Failed to create duty.', 500);
+        }
     }
 
-    public function show($id)
+    //GET upcoming duties
+    public function getUpcomingDuties()
     {
-        $duty = Duty::with('student')->findOrFail($id);
-        return response()->json($duty);
+        $upcomingDuties = Duty::upcoming()->get();
+        return response()->json($upcomingDuties);
     }
 
+    //GET completed duties
+    public function getCompletedDuties()
+    {
+        $completedDuties = Duty::completed()->get();
+        return response()->json($completedDuties);
+    }
+
+    //UPDATE a duty
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'student_id' => 'sometimes|required|exists:students,id',
-            'date' => 'sometimes|required|date',
-            'time' => 'sometimes|required|date_format:H:i',
-            'subject' => 'sometimes|required|string|max:255',
-            'teacher' => 'sometimes|required|string|max:255',
-            'room' => 'sometimes|required|string|max:255',
+        $duty = Duty::findOrFail($id);
+
+        $validatedData = $request->validate([
+            'teacher_id' => 'required|exists:teachers,id',
+            'student_id' => 'nullable|exists:students,id',
+            'subject' => 'required|string|max:255',
+            'room' => 'required|string|max:255',
+            'date' => 'required|date',
+            'start_time' => 'required|date_format:H:i',
+            'end_time' => 'required|date_format:H:i|after:start_time',
+            'status' => 'required|in:pending,finished,canceled',
         ]);
 
-        $duty = Duty::findOrFail($id);
-        $duty->update($request->all());
-        return response()->json($duty);
+        $duty->update($validatedData);
+
+        return response()->json(['message' => 'Duty updated successfully']);
     }
 
+    //Delete a duty
     public function destroy($id)
     {
         $duty = Duty::findOrFail($id);
         $duty->delete();
-        return response()->json(null, 204);
+
+        return response()->json(['message' => 'Duty deleted successfully']);
     }
 }

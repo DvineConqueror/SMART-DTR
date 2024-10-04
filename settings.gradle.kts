@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "HK-Attendance"
+rootProject.name = "Smart DTR"
 include(":app")
  

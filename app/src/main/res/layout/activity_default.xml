@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DefaultActivity">
+    tools:context=".DefaultActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -79,7 +81,6 @@
         android:layout_width="242dp"
         android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
-        android:drawableRight="@drawable/info"
         android:ems="10"
         android:inputType="text"
         android:text=""
@@ -106,7 +107,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_edittext"
-        android:drawableRight="@drawable/info"
         android:ems="10"
         android:inputType=""
         android:minHeight="48dp"

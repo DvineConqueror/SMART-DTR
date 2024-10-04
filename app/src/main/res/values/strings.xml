@@ -40,15 +40,11 @@
     <string name="top_wave">top_wave</string>
     <string name="duty_schedule_label">Duty Schedule</string>
     <string name="upcoming_date1">Pending: September 5, 2024</string>
-    <string name="top_wave2">top_wave2</string>
-    <string name="teacher_id_label">Teacher ID:</string>
-    <string name="teacher_email_label">Email:</string>
-    <string name="teacher_mobile_number">Mobile Number:</string>
-    <string name="teacher_date_of_birth_label">Date of birth:</string>
-    <string name="teacher_sex_label">Sex:</string>
-    <string name="teacher_name_label">Name: </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="asdsadasds">asdsadasds</string>
+    <string name="_58844848">58844848</string>
+    <string name="history">History</string>
 
 
 </resources>
