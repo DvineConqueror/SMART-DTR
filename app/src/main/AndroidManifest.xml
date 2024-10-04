@@ -28,13 +28,7 @@
             android:name=".activity_duty_schedule_teacher"
             android:exported="false" />
         <activity
-            android:name=".activity_student_home_page"
-            android:exported="false" />
-        <activity
             android:name=".activity_teacher_account_details"
-            android:exported="false" />
-        <activity
-            android:name=".activity_home_pagee"
             android:exported="false" />
         <activity
             android:name=".activity_home_page_teacher"
