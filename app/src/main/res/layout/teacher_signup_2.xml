@@ -76,19 +76,20 @@
         app:srcCompat="@drawable/ellipse10"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="214dp" />
+        tools:layout_editor_absoluteY="238dp" />
 
-    <TextView
-        android:id="@+id/tvTeacherId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Teacher ID"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="263dp" />
+    <EditText
+        android:id="@+id/etSex"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteY="621dp" />
 
     <EditText
         android:id="@+id/etTeacherId"
@@ -97,9 +98,11 @@
         android:background="@drawable/custom_edittext"
         android:ems="10"
         android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="290dp" />
+        tools:layout_editor_absoluteY="353dp" />
 
     <TextView
         android:id="@+id/tvMobileNumber"
@@ -109,9 +112,9 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etMobileNumber"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="350dp" />
+        tools:layout_editor_absoluteX="36dp" />
 
     <EditText
         android:id="@+id/etMobileNumber"
@@ -120,32 +123,11 @@
         android:background="@drawable/custom_edittext"
         android:ems="10"
         android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="377dp" />
-
-    <EditText
-        android:id="@+id/etSex"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:background="@drawable/custom_edittext"
-        android:ems="10"
-        android:inputType="text"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="558dp" />
-
-    <TextView
-        android:id="@+id/tvSex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sex"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="531dp" />
+        tools:layout_editor_absoluteY="440dp" />
 
     <TextView
         android:id="@+id/tvDateOfBirth"
@@ -155,9 +137,9 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etDateOfBirth"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="436dp" />
+        tools:layout_editor_absoluteX="36dp" />
 
     <EditText
         android:id="@+id/etDateOfBirth"
@@ -166,19 +148,47 @@
         android:background="@drawable/custom_edittext"
         android:ems="10"
         android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="467dp" />
+        tools:layout_editor_absoluteY="530dp" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etSex"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <TextView
+        android:id="@+id/tvTeacherId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher ID"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etTeacherId"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp" />
 
     <Button
         android:id="@+id/btSignup"
         android:layout_width="wrap_content"
         android:layout_height="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#041AE0"
         android:text="Create Account"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="644dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
