@@ -203,6 +203,6 @@
         android:background="@drawable/rectangle_bottom"
         app:itemIconSize="50dp"
         app:itemIconTint="@color/white"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/menu" />
 
 </FrameLayout>

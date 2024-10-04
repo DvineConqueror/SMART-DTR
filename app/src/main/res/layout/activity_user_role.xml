@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_user_role"
+    tools:context=".activity_selecting_role"
     android:orientation="vertical"
     android:background="@android:color/white">
 
@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tagline"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="71dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="44dp"
 
         android:backgroundTint="@color/yellow"
@@ -86,7 +86,8 @@
         android:paddingBottom="10dp"
         android:text="@string/btn_student"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="ActivityCreateLogin"/>
 
     <Button
         android:id="@+id/btnTeacher"
@@ -101,6 +102,7 @@
         android:paddingBottom="10dp"
         android:text="@string/btn_teacher"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="ActivityCreateLogin"/>
 
 </RelativeLayout>

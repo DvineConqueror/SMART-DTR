@@ -17,7 +17,8 @@ class SplashScreenActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         android.os.Handler().postDelayed({
-            val intent = Intent(this@SplashScreenActivity, activity_user_role::class.java)
+            val intent = Intent(this@SplashScreenActivity, activity_selecting_role::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
             finish()
         }, 3000)

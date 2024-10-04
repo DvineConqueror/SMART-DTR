@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityCreateLogin"
     android:orientation="vertical"
     android:background="@android:color/white">
 
@@ -95,7 +94,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:strokeColor="@color/brightred"
-        app:strokeWidth="2dp" />
+        app:strokeWidth="2dp"/>
 
     <ImageView
         android:id="@+id/imageView"

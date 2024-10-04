@@ -1,27 +1,44 @@
 package com.example.hk_attendance
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-
 class ActivityCreateLogin : AppCompatActivity() {
-
-    @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        this.enableEdgeToEdge()
         setContentView(R.layout.activity_create_login)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        supportActionBar?.hide()  // Hide action bar if needed
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        // Using findViewById to initialize buttons
+        val btnStudent: Button = findViewById(R.id.btn_create_account)
+        val btnTeacher: Button = findViewById(R.id.btn_log_in)
+
+        btnStudent.setOnClickListener {
+            startActivity(
+                Intent(
+                    this@ActivityCreateLogin,
+                    CreateAccount::class.java
+                )
+            )
+        }
+
+        // Redirects for Teacher button
+        btnTeacher.setOnClickListener ({
+            startActivity(
+                Intent(
+                    this@ActivityCreateLogin,
+                    LoginAccount::class.java
+                )
+            )
+        })
 
         // Apply window insets for edge-to-edge display
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -30,17 +47,4 @@ class ActivityCreateLogin : AppCompatActivity() {
             insets
         }
     }
-
-    // This method is for handling the action bar back button (home button)
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            android.R.id.home -> {
-                onBackPressed() // This will act like the physical back button
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
-
 }
-

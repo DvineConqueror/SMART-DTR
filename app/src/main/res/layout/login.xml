@@ -69,12 +69,12 @@
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="409dp"
-        android:layout_height="616dp"
-        app:srcCompat="@drawable/ellipse10"
+        android:layout_width="700dp"
+        android:layout_height="660dp"
+        app:srcCompat="@drawable/gradient_background"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="292dp" />
+        tools:layout_editor_absoluteX="-213dp"
+        tools:layout_editor_absoluteY="334dp" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -103,12 +103,12 @@
     <EditText
         android:id="@+id/etEmailAddress"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/custom_edittext"
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="468dp" />
 
     <TextView

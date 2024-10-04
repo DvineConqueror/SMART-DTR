@@ -23,19 +23,29 @@
             android:name=".duty_card"
             android:exported="false" />
         <activity
-            android:name=".activity_user_role"
+            android:name=".activity_selecting_role"
             android:exported="false" />
         <activity
             android:name=".ActivityCreateLogin"
             android:exported="false"
-            android:parentActivityName=".activity_user_role">
+            android:parentActivityName=".activity_selecting_role">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity_user_role" />
+                android:value=".activity_selecting_role" />
         </activity>
         <activity
-            android:name=".activity_selecting_role"
-            android:exported="false" />
+            android:name=".CreateAccount"
+            android:parentActivityName=".ActivityCreateLogin">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ActivityCreateLogin" />
+        </activity>
+        <activity android:name=".LoginAccount"
+            android:parentActivityName=".ActivityCreateLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityCreateLogin" />
+        </activity>
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
