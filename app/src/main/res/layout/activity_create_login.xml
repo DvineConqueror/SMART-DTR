@@ -91,7 +91,7 @@
         android:paddingRight="109dp"
         android:paddingBottom="10dp"
         android:text="Log In"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:strokeColor="@color/brightred"

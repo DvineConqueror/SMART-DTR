@@ -29,22 +29,11 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/profile_picture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/account_details"
-        tools:srcCompat="@drawable/profile"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        />
-
-
     <LinearLayout
         android:id="@+id/account_details_section"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profile_picture"
+        android:layout_below="@id/account_details"
         android:layout_centerHorizontal="true"
         android:orientation="vertical"
         android:layout_marginTop="30dp">
