@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -18,71 +17,43 @@
         android:theme="@style/Theme.HKAttendance"
         tools:targetApi="31">
         <activity
+            android:name=".teacher_duty_card"
+            android:exported="false" />
+        <activity
+            android:name=".duty_card"
+            android:exported="false" />
+        <activity
             android:name=".activity_user_role"
-            android:exported="false"
-            />
-        <activity
-            android:name=".activity_duty_schedule_teacherr"
-            android:exported="false" />
-        <activity
-            android:name=".activity_duty_schedule_teacher"
-            android:exported="false" />
-        <activity
-            android:name=".activity_teacher_account_details"
-            android:exported="false" />
-        <activity
-            android:name=".activity_home_page_teacher"
-            android:exported="false" />
-        <activity
-            android:name=".activity_account_details"
-            android:exported="false" />
-        <activity
-            android:name=".activity_change_password"
-            android:exported="false" />
-        <activity
-            android:name=".activity_home_page"
             android:exported="false" />
         <activity
             android:name=".ActivityCreateLogin"
             android:exported="false"
             android:parentActivityName=".activity_user_role">
             <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".activity_user_role" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity_user_role" />
         </activity>
         <activity
             android:name=".activity_selecting_role"
             android:exported="false" />
-        <activity
-            android:name=".DefaultActivity"
-            android:exported="false"
-            android:label="Default"
-            >
-        </activity>
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
             android:label="SMART DTR">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".CreateUserActivity"
             android:exported="false"
-            android:label="Create"/>
-
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:label="Home"/>
-
+            android:label="Create" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="Login"/>
-
+            android:label="Login" />
 
         <meta-data
             android:name="preloaded_fonts"

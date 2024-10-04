@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".appointment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -27,7 +28,13 @@
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_dutySchedule"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/duty_schedule_label"
+        app:layout_constraintTop_toBottomOf="@+id/duty_schedule_label"
+        tools:listitem="@layout/finished_duty_card" />
 
 </FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher_duty_card">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_upcoming_duty"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:elevation="6dp"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="29dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/upcoming_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending: September 5, 2024"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/upcoming_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: 7:30 am - 9:00 am"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_date"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/upcoming_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject: PED 031"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_time"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/upcoming_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher: Mrs. Marlyn Ogoy"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_subject"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/upcoming_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room: RS 115"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_teacher"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/upcoming_students_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Students List: [link]"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_room"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Positioning the ImageButton to the bottom-right -->
+            <ImageButton
+                android:id="@+id/edit_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_edit_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

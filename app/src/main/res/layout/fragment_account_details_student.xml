@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="260dp"
         android:layout_marginTop="-29dp"
-        android:contentDescription="@string/top_wave2"
         android:scaleType="fitXY"
         android:src="@drawable/topwave_2" />
 

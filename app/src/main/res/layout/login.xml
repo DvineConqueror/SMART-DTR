@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="90dp" />
+        tools:layout_editor_absoluteY="38dp" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -73,43 +73,8 @@
         android:layout_height="616dp"
         app:srcCompat="@drawable/ellipse10"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="342dp" />
-
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="E-Mail"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="469dp" />
-
-    <EditText
-        android:id="@+id/etEmailAddress"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:background="@drawable/custom_edittext"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="503dp" />
-
-    <TextView
-        android:id="@+id/tvPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="605dp" />
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="292dp" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -120,8 +85,43 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="640dp" />
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="570dp" />
 
     <Button
         android:id="@+id/btLogin"
@@ -132,6 +132,6 @@
         android:textSize="20dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="743dp" />
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="682dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
