@@ -70,7 +70,6 @@ class MainActivityStudent : AppCompatActivity() {
         }
         button4.setOnClickListener {
             // Handle Button 4 click
-            replaceFragment(change_password())
             bottomSheetDialog.dismiss()
         }
     }
