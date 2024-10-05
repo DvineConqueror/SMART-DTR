@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.hk_attendance.databinding.ActivityMainStudentBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import androidx.appcompat.app.AlertDialog
 
 class MainActivityStudent : AppCompatActivity() {
 
@@ -73,5 +74,34 @@ class MainActivityStudent : AppCompatActivity() {
             bottomSheetDialog.dismiss()
         }
     }
+
+    private fun showLogoutDialog() {
+        // Inflate the custom dialog layout
+        val dialogView = layoutInflater.inflate(R.layout.log_out, null)
+
+        val builder = AlertDialog.Builder(this)
+        builder.setView(dialogView)
+
+        val alertDialog = builder.create()
+
+        // Initialize buttons
+        val buttonYes = dialogView.findViewById<Button>(R.id.logout)
+        val buttonNo = dialogView.findViewById<Button>(R.id.cancel_button)
+
+        buttonYes.setOnClickListener {
+            // Handle logout action
+            // For example, navigate to the login screen or clear user data
+            alertDialog.dismiss()
+            // Example: startActivity(Intent(this, LoginActivity::class.java))
+            // finish() // Optional: close this activity
+        }
+
+        buttonNo.setOnClickListener {
+            alertDialog.dismiss() // Just dismiss the dialog
+        }
+
+        alertDialog.show()
+    }
+
 
 }
