@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HKAttendance"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".teacher_history_card"
+            android:exported="false" />
         <activity
             android:name=".teacher_create_login"
             android:exported="false" />
@@ -31,21 +34,21 @@
         <activity
             android:name=".ActivityStudentCreateLogin"
             android:exported="false"
-            android:parentActivityName=".activity_selecting_role">
+            android:parentActivityName=".activity_selecting_role" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity_selecting_role" />
         </activity>
         <activity
             android:name=".CreateAccount"
-            android:parentActivityName=".ActivityStudentCreateLogin">
+            android:parentActivityName=".ActivityStudentCreateLogin" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivityStudentCreateLogin" />
         </activity>
         <activity
             android:name=".LoginAccount"
-            android:parentActivityName=".ActivityStudentCreateLogin">
+            android:parentActivityName=".ActivityStudentCreateLogin" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivityStudentCreateLogin" />
@@ -53,7 +56,7 @@
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
-            android:label="SMART DTR">
+            android:label="SMART DTR" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

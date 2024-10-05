@@ -34,7 +34,7 @@ class appointment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_appointment, container, false)
+        return inflater.inflate(R.layout.fragment_student_appointment, container, false)
     }
 
     companion object {
