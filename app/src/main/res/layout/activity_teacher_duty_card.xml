@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_upcoming_duty"
         android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_height="180dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:elevation="6dp"
@@ -28,10 +28,10 @@
             android:padding="16dp">
 
             <TextView
-                android:id="@+id/upcoming_date"
+                android:id="@+id/status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pending: September 5, 2024"
+                android:text="Pending"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -39,51 +39,122 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
+                android:id="@+id/upcoming_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="September 5, 2024"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/status"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUpcomingTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Time:"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/status" />
+
+            <TextView
                 android:id="@+id/upcoming_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Time: 7:30 am - 9:00 am"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="4dp"
+                android:text="7:30 am - 9:00 am"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/upcoming_date"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/tvUpcomingTimeLabel"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_date" />
+
+            <TextView
+                android:id="@+id/tvUpcomingSubjectLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Subject:"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUpcomingTimeLabel" />
 
             <TextView
                 android:id="@+id/upcoming_subject"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Subject: PED 031"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:text="PED 031"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/upcoming_time"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/tvUpcomingSubjectLabel"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_time" />
+
+            <TextView
+                android:id="@+id/tvUpcomingTeacherLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Teacher:"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUpcomingSubjectLabel" />
 
             <TextView
                 android:id="@+id/upcoming_teacher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Teacher: Mrs. Marlyn Ogoy"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="Mrs. Marlyn Ogoy"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/upcoming_subject"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/tvUpcomingTeacherLabel"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_subject" />
 
+            <TextView
+                android:id="@+id/tvUpcomingRoomLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Room:"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUpcomingTeacherLabel" />
+
+            <!-- Positioning the ImageButton to the bottom-right -->
             <TextView
                 android:id="@+id/upcoming_room"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Room: RS 115"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="8dp"
+                android:text="RS 115"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/upcoming_teacher"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/tvUpcomingRoomLabel"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_teacher" />
 
             <TextView
                 android:id="@+id/upcoming_students_list"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Students List: [link]"
+                android:layout_marginTop="4dp"
+                android:text="Students List:"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/upcoming_room"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/upcoming_room" />
 
-            <!-- Positioning the ImageButton to the bottom-right -->
+            <ImageButton
+                android:id="@+id/btStudentList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_list_24"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="127dp" />
+
             <ImageButton
                 android:id="@+id/edit_button"
                 android:layout_width="30dp"

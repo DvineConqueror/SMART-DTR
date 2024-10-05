@@ -30,7 +30,7 @@ class CreateAccount : AppCompatActivity() {
         nextButton.setOnClickListener{
             Toast.makeText(this, "You have successfully created an account!", Toast.LENGTH_SHORT).show()
             Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this, ActivityCreateLogin::class.java)
+                val intent = Intent(this, ActivityStudentCreateLogin::class.java)
                 startActivity(intent)
             }, 1000)
         }

@@ -17,6 +17,9 @@
         android:theme="@style/Theme.HKAttendance"
         tools:targetApi="31">
         <activity
+            android:name=".teacher_create_login"
+            android:exported="false" />
+        <activity
             android:name=".teacher_duty_card"
             android:exported="false" />
         <activity
@@ -26,7 +29,7 @@
             android:name=".activity_selecting_role"
             android:exported="false" />
         <activity
-            android:name=".ActivityCreateLogin"
+            android:name=".ActivityStudentCreateLogin"
             android:exported="false"
             android:parentActivityName=".activity_selecting_role">
             <meta-data
@@ -35,16 +38,17 @@
         </activity>
         <activity
             android:name=".CreateAccount"
-            android:parentActivityName=".ActivityCreateLogin">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".ActivityCreateLogin" />
-        </activity>
-        <activity android:name=".LoginAccount"
-            android:parentActivityName=".ActivityCreateLogin">
+            android:parentActivityName=".ActivityStudentCreateLogin">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ActivityCreateLogin" />
+                android:value=".ActivityStudentCreateLogin" />
+        </activity>
+        <activity
+            android:name=".LoginAccount"
+            android:parentActivityName=".ActivityStudentCreateLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityStudentCreateLogin" />
         </activity>
         <activity
             android:name=".SplashScreenActivity"

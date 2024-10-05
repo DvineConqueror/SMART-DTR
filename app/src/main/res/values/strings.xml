@@ -48,6 +48,7 @@
     <string name="teacher_name">teacher name</string>
     <string name="teacher_id">teacher id</string>
     <string name="teacher_email">teacher email</string>
+    <string name="create_login_text">Make Daily Time Record management more efficient and accessible</string>
 
 
 </resources>

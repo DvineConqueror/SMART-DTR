@@ -2,18 +2,17 @@ package com.example.hk_attendance
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ActivityCreateLogin : AppCompatActivity() {
+class ActivityStudentCreateLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.enableEdgeToEdge()
-        setContentView(R.layout.activity_create_login)
+        setContentView(R.layout.activity_student_create_login)
 
         supportActionBar?.hide()  // Hide action bar if needed
 
@@ -24,7 +23,7 @@ class ActivityCreateLogin : AppCompatActivity() {
         btnStudent.setOnClickListener {
             startActivity(
                 Intent(
-                    this@ActivityCreateLogin,
+                    this@ActivityStudentCreateLogin,
                     CreateAccount::class.java
                 )
             )
@@ -34,7 +33,7 @@ class ActivityCreateLogin : AppCompatActivity() {
         btnTeacher.setOnClickListener ({
             startActivity(
                 Intent(
-                    this@ActivityCreateLogin,
+                    this@ActivityStudentCreateLogin,
                     LoginAccount::class.java
                 )
             )

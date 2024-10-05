@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@android:color/white">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <ImageView
         android:id="@+id/top_ellipse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="-61dp"
         android:scaleType="fitXY"
-        android:src="@drawable/top_ellipse" />
+        android:src="@drawable/top_ellipse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
         android:src="@drawable/logo"
-        android:paddingTop="100dp"
-        android:layout_centerHorizontal="true"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
     <TextView
         android:id="@+id/logo_name"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo"
         android:layout_marginTop="0dp"
         android:fontFamily="@font/lilita_one"
         android:gravity="center"
@@ -45,45 +50,51 @@
         android:text="SMART DTR"
         android:textColor="@color/yellow"
         android:textSize="50sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
     <TextView
         android:id="@+id/tag_line"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo_name"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:text="Make Daily Time Record management more efficient and accessible"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/create_login_text"
+        android:textColor="@color/blue"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@color/blue"
-        android:gravity="center"
-        />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_name" />
 
     <Button
         android:id="@+id/btn_create_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
-        android:text="Create Account"
-        android:paddingRight="70dp"
+        android:layout_marginTop="28dp"
         android:paddingLeft="70dp"
         android:paddingTop="10dp"
+        android:paddingRight="70dp"
         android:paddingBottom="10dp"
+        android:text="Create Account"
         android:textColor="@color/yellow"
         android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tag_line"
         app:strokeColor="@color/yellow"
-        app:strokeWidth="2dp"
-        android:textStyle="bold"/>
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/btn_log_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/brightred"
         android:paddingLeft="109dp"
         android:paddingTop="10dp"
@@ -93,22 +104,21 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_create_account"
         app:strokeColor="@color/brightred"
-        app:strokeWidth="2dp"/>
+        app:strokeWidth="2dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="44dp"
         android:layout_height="40dp"
-        android:layout_alignBottom="@+id/toolbar"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="350dp"
-        android:layout_marginBottom="-1dp"
-        android:src="@drawable/baseline_arrow_back_24" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
