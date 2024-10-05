@@ -2,7 +2,6 @@ package com.example.hk_attendance
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +24,7 @@ class activity_selecting_role : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@activity_selecting_role,
-                    MainActivity::class.java
+                    MainActivityStudent::class.java
                 )
             )
         }
@@ -35,7 +34,7 @@ class activity_selecting_role : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@activity_selecting_role,
-                    MainActivity::class.java
+                    MainActivityStudent::class.java
                 )
             )
         })

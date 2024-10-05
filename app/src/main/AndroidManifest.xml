@@ -68,7 +68,7 @@
             android:exported="false"
             android:label="Create" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityStudent"
             android:exported="false"
             android:label="Login" />
 
