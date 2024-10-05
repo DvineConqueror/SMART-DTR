@@ -2,29 +2,28 @@ package com.example.hk_attendance
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class activity_selecting_role : AppCompatActivity() {
+class Student_Create_login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.enableEdgeToEdge()
-        setContentView(R.layout.activity_user_role)
+        setContentView(R.layout.activity_signup_login)
 
         supportActionBar?.hide()  // Hide action bar if needed
 
         // Using findViewById to initialize buttons
-        val btnStudent: Button = findViewById(R.id.btnStudent)
-        val btnTeacher: Button = findViewById(R.id.btnTeacher)
+        val btnStudent: Button = findViewById(R.id.btn_create_account)
+        val btnTeacher: Button = findViewById(R.id.btn_log_in)
 
         btnStudent.setOnClickListener {
             startActivity(
                 Intent(
-                    this@activity_selecting_role,
+                    this@Student_Create_login,
                     MainActivityStudent::class.java
                 )
             )
@@ -34,7 +33,7 @@ class activity_selecting_role : AppCompatActivity() {
         btnTeacher.setOnClickListener ({
             startActivity(
                 Intent(
-                    this@activity_selecting_role,
+                    this@Student_Create_login,
                     MainActivityStudent::class.java
                 )
             )

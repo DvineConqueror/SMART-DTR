@@ -8,11 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ActivityStudentCreateLogin : AppCompatActivity() {
+class Teacher_Create_signup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.enableEdgeToEdge()
-        setContentView(R.layout.activity_student_create_login)
+        setContentView(R.layout.activity_teacher_create_signup)
 
         supportActionBar?.hide()  // Hide action bar if needed
 
@@ -23,7 +23,7 @@ class ActivityStudentCreateLogin : AppCompatActivity() {
         btnStudent.setOnClickListener {
             startActivity(
                 Intent(
-                    this@ActivityStudentCreateLogin,
+                    this@Teacher_Create_signup,
                     CreateAccount::class.java
                 )
             )
@@ -33,7 +33,7 @@ class ActivityStudentCreateLogin : AppCompatActivity() {
         btnTeacher.setOnClickListener ({
             startActivity(
                 Intent(
-                    this@ActivityStudentCreateLogin,
+                    this@Teacher_Create_signup,
                     LoginAccount::class.java
                 )
             )
