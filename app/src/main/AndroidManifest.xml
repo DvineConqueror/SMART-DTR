@@ -26,7 +26,7 @@
             android:name=".teacher_duty_card"
             android:exported="false" />
         <activity
-            android:name=".duty_card"
+            android:name=".student_duty_card"
             android:exported="false" />
         <activity
             android:name=".activity_selecting_role"
