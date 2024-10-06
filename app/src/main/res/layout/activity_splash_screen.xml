@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,42 +7,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity"
-    android:orientation="vertical"
     android:background="@android:color/white">
 
   <ImageView
       android:id="@+id/wave1"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_alignParentTop="true"
-      android:layout_marginTop="-19dp"
+      android:layout_width="395dp"
+      android:layout_height="246dp"
+      android:contentDescription="@string/wave1"
       android:scaleType="fitXY"
       android:src="@drawable/wave"
-      android:contentDescription="@string/wave1"/>
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="1.0" />
 
   <ImageView
       android:id="@+id/logo"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:src="@drawable/logo"
-      android:layout_centerInParent="true"
-
-      />
+      app:layout_constraintBottom_toTopOf="@id/logo_name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.569"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/wave1"
+      app:layout_constraintVertical_bias="0.0" />
 
   <TextView
       android:id="@+id/logo_name"
-      android:layout_width="match_parent"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_below="@+id/logo"
-      android:layout_alignParentBottom="true"
-      android:layout_marginTop="16dp"
-      android:layout_marginBottom="164dp"
+      android:layout_marginBottom="248dp"
       android:fontFamily="@font/lilita_one"
       android:gravity="center"
       android:paddingTop="20dp"
       android:text="@string/logo_name"
       android:textColor="@color/yellow"
       android:textSize="50sp"
-      android:textStyle="bold" />
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintWidth_percent="1.0" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

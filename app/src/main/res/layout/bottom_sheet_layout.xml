@@ -9,33 +9,42 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 1"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
         android:drawableBottom="@drawable/baseline_key_24"
-        android:layout_weight="1"/>
+        android:text="change password"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawablePadding="0dp"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 2"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
         android:drawableBottom="@drawable/baseline_account_circle_24"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:text="user details"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawablePadding="0dp"/>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 3"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
         android:drawableBottom="@drawable/baseline_history_24"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:text="history"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawablePadding="0dp"/>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 4"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
         android:drawableBottom="@drawable/baseline_logout_24"
-        android:layout_weight="1"/>
+        android:text="log out"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawablePadding="0dp"
+        />
 </LinearLayout>
