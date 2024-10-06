@@ -29,7 +29,7 @@ class home_page_student : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page_student, container, false)
+        return inflater.inflate(R.layout.fragment_student_home_page, container, false)
     }
 
     companion object {

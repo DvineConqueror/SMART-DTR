@@ -37,6 +37,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/student_list_label"
-        tools:listitem="@layout/activity_student_list_card" />
+        tools:listitem="@layout/activity_teacher_list_student_card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@ class Teacher_Create_signup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.enableEdgeToEdge()
-        setContentView(R.layout.activity_teacher_create_signup)
+        setContentView(R.layout.activity_teacher_signup_login)
 
         supportActionBar?.hide()  // Hide action bar if needed
 

@@ -2,7 +2,6 @@ package com.example.hk_attendance
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +12,7 @@ class activity_selecting_role : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.enableEdgeToEdge()
-        setContentView(R.layout.activity_user_role)
+        setContentView(R.layout.activity_choose_user_role)
 
         supportActionBar?.hide()  // Hide action bar if needed
 
