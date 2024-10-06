@@ -6,19 +6,19 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <item android:title="Home"
+    <item android:title=""
         android:id="@+id/home_btn"
         android:icon="@drawable/baseline_home_24"
         android:titleTextAppearance="@style/CustomBottomNavigationView"
         />
 
-    <item android:title="Appointment"
+    <item android:title=""
         android:id="@+id/appointment_btn"
         android:icon="@drawable/baseline_calendar_month_24"
         android:titleTextAppearance="@style/CustomBottomNavigationView"
         />
 
-    <item android:title="Menu"
+    <item android:title=""
         android:id="@+id/menu_btn"
         android:icon="@drawable/baseline_menu_24"
         android:titleTextAppearance="@style/CustomBottomNavigationView"

@@ -17,6 +17,12 @@
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".main_student"
+            android:exported="false" />
+        <activity
+            android:name=".student_login"
+            android:exported="false" />
+        <activity
             android:name=".activity_teacher_login"
             android:exported="false" />
         <activity
@@ -56,7 +62,7 @@
             android:name=".activity_selecting_role"
             android:exported="false" />
         <activity android:name=".CreateAccount" />
-        <activity android:name=".LoginAccount" />
+        <activity android:name=".StudentLogin" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"

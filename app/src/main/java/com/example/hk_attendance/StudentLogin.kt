@@ -3,6 +3,7 @@ package com.example.hk_attendance
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.InputType
 import android.view.MenuItem
 import android.view.MotionEvent
 import android.widget.Button
@@ -13,11 +14,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.hk_attendance.databinding.LoginBinding
+import com.example.hk_attendance.databinding.ActivityStudentLoginBinding
 
-class LoginAccount : AppCompatActivity() {
 
-    private lateinit var binding: LoginBinding
+class StudentLogin : AppCompatActivity() {
+
+    private lateinit var binding: ActivityStudentLoginBinding
     private var isPasswordVisible: Boolean = false
 
     // Declare your EditText and Button here
@@ -30,7 +32,7 @@ class LoginAccount : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        binding = LoginBinding.inflate(layoutInflater)
+        binding = ActivityStudentLoginBinding.inflate(layoutInflater)
         setContentView(binding.root) // Set content view to the binding root
 
         // Initialize your views
@@ -79,9 +81,9 @@ class LoginAccount : AppCompatActivity() {
     private fun togglePasswordVisibility() {
         isPasswordVisible = !isPasswordVisible
         binding.etPassword.inputType = if (isPasswordVisible) {
-            android.text.InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+            InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
         } else {
-            android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
+            InputType.TYPE_TEXT_VARIATION_PASSWORD
         }
         binding.etPassword.setSelection(binding.etPassword.text.length) // Move cursor to the end
     }

@@ -5,36 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context=".MainActivityStudent">
+    tools:context=".activity_main_teacher">
 
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@id/btmNavView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btmNavView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmNavView"
         android:layout_width="0dp"
-        android:layout_height="80dp"
-        app:itemTextColor="@color/item_text_color"
+        android:layout_height="wrap_content"
+        android:background="@color/brightred"
         app:itemIconSize="40dp"
-        app:itemIconTint="@color/icon_color"
-        android:background="@color/white"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:itemBackground="@null"
-        app:itemRippleColor="@color/transparent"
-        style="@style/CustomBottomNavigationView"
         app:menu="@menu/menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>

@@ -34,7 +34,7 @@ class Teacher_Create_signup : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@Teacher_Create_signup,
-                    LoginAccount::class.java
+                    StudentLogin::class.java
                 )
             )
         })
