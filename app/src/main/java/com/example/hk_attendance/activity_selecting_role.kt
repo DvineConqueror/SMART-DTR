@@ -35,7 +35,7 @@ class activity_selecting_role : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@activity_selecting_role,
-                    MainActivityStudent::class.java
+                    activity_main_teacher::class.java
                 )
             )
         })
