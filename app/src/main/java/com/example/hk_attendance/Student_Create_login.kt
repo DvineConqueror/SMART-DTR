@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.hk_attendance.ui.Student_Create_Signup
 
 class Student_Create_login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,20 +18,20 @@ class Student_Create_login : AppCompatActivity() {
         supportActionBar?.hide()  // Hide action bar if needed
 
         // Using findViewById to initialize buttons
-        val btnStudent: Button = findViewById(R.id.btn_create_account)
-        val btnTeacher: Button = findViewById(R.id.btn_log_in)
+        val btnStudentCreateAccount: Button = findViewById(R.id.btn_create_account)
+        val btnStudentLoginAccount: Button = findViewById(R.id.btn_log_in)
 
-        btnStudent.setOnClickListener {
+        btnStudentCreateAccount.setOnClickListener {
             startActivity(
                 Intent(
                     this@Student_Create_login,
-                    MainActivityStudent::class.java
+                    Student_Create_Signup::class.java
                 )
             )
         }
 
         // Redirects for Teacher button
-        btnTeacher.setOnClickListener ({
+        btnStudentLoginAccount.setOnClickListener ({
             startActivity(
                 Intent(
                     this@Student_Create_login,
