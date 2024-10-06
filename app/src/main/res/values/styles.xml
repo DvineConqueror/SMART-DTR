@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="itemShapeAppearanceOverlay">@null</item>
-        <item name="itemShapeAppearance">@null</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:padding">5dp</item>
+
+    <style name="CustomBottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="itemRippleColor">@color/transparent</item>
     </style>
 
-    <style name="BottomNavTextAppearance" parent="TextAppearance.MaterialComponents.Caption">
-        <!-- Control text size and color -->
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/white</item>
-    </style>
 
 </resources>
