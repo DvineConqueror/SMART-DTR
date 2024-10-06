@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:orientation="vertical"
-    android:fillViewport="true"
     tools:context=".home_page_teacher">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <!-- Top Wave Image -->
         <ImageView
@@ -26,17 +22,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Make an Appointment Button -->
-
-        <!-- Upcoming Duty Label -->
-
-        <!-- Upcoming Duty CardView -->
-
-        <!-- Finished Duty Label -->
-
-
-        <!-- Finished Duty CardView -->
-
         <Button
             android:id="@+id/button"
             android:layout_width="300dp"
@@ -47,7 +32,6 @@
             android:text="Make an Appointment"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
@@ -212,13 +196,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="TODO"
                     android:src="@drawable/baseline_list_24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.068"
                     app:layout_constraintStart_toEndOf="@+id/upcoming_students_list"
-                    app:layout_constraintTop_toBottomOf="@+id/upcoming_room"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    app:layout_constraintTop_toBottomOf="@+id/upcoming_room" />
 
                 <ImageButton
                     android:id="@+id/edit_button"
@@ -227,11 +209,9 @@
                     android:layout_marginEnd="1dp"
                     android:layout_marginBottom="1dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="TODO"
                     android:src="@drawable/baseline_edit_24"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    app:layout_constraintEnd_toEndOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -349,8 +329,8 @@
 
                 <TextView
                     android:id="@+id/tvFinishedRoomLabel"
-                    android:layout_width="33dp"
-                    android:layout_height="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:text="Room:"
                     android:textColor="@color/white"
@@ -404,13 +384,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="TODO"
                     android:src="@drawable/baseline_list_24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.173"
                     app:layout_constraintStart_toEndOf="@+id/finished_students_list"
-                    app:layout_constraintTop_toBottomOf="@+id/finished_room"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    app:layout_constraintTop_toBottomOf="@+id/finished_room" />
 
                 <TextView
                     android:id="@+id/finished_subject"
@@ -427,10 +405,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
