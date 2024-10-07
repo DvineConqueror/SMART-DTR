@@ -14,7 +14,7 @@
         <ImageView
             android:id="@+id/top_wave"
             android:layout_width="match_parent"
-            android:layout_height="224dp"
+            android:layout_height="250dp"
             android:contentDescription="top_wave"
             android:scaleType="fitXY"
             android:src="@drawable/top_wave"

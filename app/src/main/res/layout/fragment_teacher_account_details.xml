@@ -17,7 +17,7 @@
             <ImageView
                 android:id="@+id/top_wave2"
                 android:layout_width="match_parent"
-                android:layout_height="223dp"
+                android:layout_height="250dp"
                 android:layout_marginTop="-29dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/topwave_2"

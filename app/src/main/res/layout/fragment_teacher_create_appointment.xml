@@ -13,21 +13,24 @@
         <ImageView
             android:id="@+id/imageView21"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/vector"
-            tools:ignore="ContentDescription,MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-41dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vector" />
 
         <ImageView
             android:id="@+id/imageView22"
             android:layout_width="100dp"
             android:layout_height="80dp"
             android:layout_marginStart="88dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="98dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"
             app:layout_constraintStart_toStartOf="@+id/imageView21"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView23"
             app:srcCompat="@drawable/img_1"
             tools:ignore="ContentDescription" />
 
@@ -35,11 +38,14 @@
             android:id="@+id/imageView23"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="99dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+            app:layout_constraintEnd_toEndOf="@+id/imageView21"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView22"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView21"
             app:srcCompat="@drawable/group_76"
             tools:ignore="ContentDescription" />
 
@@ -48,13 +54,13 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="56dp"
             android:background="@android:color/transparent"
             android:contentDescription="backToHome"
             android:scaleType="fitCenter"
             android:src="@drawable/baseline_arrow_back_24"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="@+id/imageView21"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -66,9 +72,10 @@
             android:textColor="#1604F4"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="HardcodedText,MissingConstraints"
-            tools:layout_editor_absoluteY="170dp" />
+            tools:layout_editor_absoluteY="240dp" />
 
         <CalendarView
             android:id="@+id/calendarView"

@@ -12,9 +12,8 @@
 
         <ImageView
             android:id="@+id/top_wave2"
-            android:layout_width="0dp"
-            android:layout_height="260dp"
-            android:layout_marginTop="-29dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
             android:scaleType="fitXY"
             android:src="@drawable/topwave_2"
             app:layout_constraintEnd_toEndOf="parent"
