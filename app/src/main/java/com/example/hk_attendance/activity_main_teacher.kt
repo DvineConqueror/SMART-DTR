@@ -2,15 +2,15 @@ package com.example.hk_attendance
 
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.hk_attendance.databinding.ActivityMainStudentBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import androidx.appcompat.app.AlertDialog
 
 class activity_main_teacher : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMainStudentBinding
+    private lateinit var binding: ActivityMainStudentBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,15 +18,15 @@ class activity_main_teacher : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(home_page_teacher())
 
-        binding.btmNavView.setOnItemSelectedListener{
+        binding.btmNavView.setOnItemSelectedListener {
 
-            when(it.itemId){
+            when (it.itemId) {
 
-                R.id.home_btn ->replaceFragment(home_page_teacher())
-                R.id.appointment_btn ->replaceFragment(teacherAppointment())
-                R.id.menu_btn ->showBottomSheetDialog()
+                R.id.home_btn -> replaceFragment(home_page_teacher())
+                R.id.appointment_btn -> replaceFragment(teacherAppointment())
+                R.id.menu_btn -> showBottomSheetDialog()
 
-                else->{
+                else -> {
 
 
                 }
@@ -35,10 +35,10 @@ class activity_main_teacher : AppCompatActivity() {
         }
     }
 
-    private fun replaceFragment(fragment: Fragment){
+    private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frameLayout,fragment)
+        fragmentTransaction.replace(R.id.frameLayout, fragment)
         fragmentTransaction.commit()
     }
 

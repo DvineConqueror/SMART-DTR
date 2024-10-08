@@ -30,7 +30,7 @@ class Teacher_Create_signup : AppCompatActivity() {
         }
 
         // Redirects for Teacher button
-        btnTeacher.setOnClickListener ({
+        btnTeacher.setOnClickListener({
             startActivity(
                 Intent(
                     this@Teacher_Create_signup,

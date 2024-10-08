@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <item android:title=""
+    <item
         android:id="@+id/home_btn"
         android:icon="@drawable/baseline_home_24"
-        android:titleTextAppearance="@style/CustomBottomNavigationView"
-        />
+        android:title=""
+        android:titleTextAppearance="@style/CustomBottomNavigationView" />
 
-    <item android:title=""
+    <item
         android:id="@+id/appointment_btn"
         android:icon="@drawable/baseline_calendar_month_24"
-        android:titleTextAppearance="@style/CustomBottomNavigationView"
-        />
+        android:title=""
+        android:titleTextAppearance="@style/CustomBottomNavigationView" />
 
-    <item android:title=""
+    <item
         android:id="@+id/menu_btn"
         android:icon="@drawable/baseline_menu_24"
-        android:titleTextAppearance="@style/CustomBottomNavigationView"
-        />
+        android:title=""
+        android:titleTextAppearance="@style/CustomBottomNavigationView" />
 </menu>

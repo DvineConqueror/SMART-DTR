@@ -1,187 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".teacher_history_card">
 
-  <androidx.cardview.widget.CardView
-      android:id="@+id/card_finished_duty"
-      android:layout_width="300dp"
-      android:layout_height="180dp"
-      android:layout_gravity="center"
-      android:layout_margin="10dp"
-      android:elevation="6dp"
-      app:cardBackgroundColor="@color/yellow"
-      app:cardCornerRadius="20dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.494"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:ignore="MissingConstraints"
-      tools:layout_editor_absoluteY="29dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_finished_duty"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:elevation="6dp"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="29dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
 
-      <TextView
-          android:id="@+id/finished_status"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Pending"
-          android:textColor="@color/white"
-          android:textSize="16sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/finished_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-      <TextView
-          android:id="@+id/Finished_date"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="September 5, 2024"
-          android:textColor="@color/white"
-          android:textSize="16sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="1.0"
-          app:layout_constraintStart_toEndOf="@+id/finished_status"
-          app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/Finished_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="September 5, 2024"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/finished_status"
+                app:layout_constraintTop_toTopOf="parent" />
 
-      <TextView
-          android:id="@+id/tvFinishedSubjectLabel"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
-          android:text="Subject:"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/tvFinishedTimeLabel" />
+            <TextView
+                android:id="@+id/tvFinishedSubjectLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Subject:"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinishedTimeLabel" />
 
-      <TextView
-          android:id="@+id/tvFinishedTimeLabel"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
-          android:text="Time:"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.021"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/finished_status" />
+            <TextView
+                android:id="@+id/tvFinishedTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Time:"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/finished_status" />
 
-      <TextView
-          android:id="@+id/finished_students_list"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
-          android:text="Students List:"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/tvFinishedRoomLabel" />
+            <TextView
+                android:id="@+id/finished_students_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Students List:"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinishedRoomLabel" />
 
-      <TextView
-          android:id="@+id/tvFinishedTeacherLabel"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
-          android:text="Teacher:"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/tvFinishedSubjectLabel" />
+            <TextView
+                android:id="@+id/tvFinishedTeacherLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Teacher:"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinishedSubjectLabel" />
 
-      <!-- Positioning the ImageButton to the bottom-right -->
+            <!-- Positioning the ImageButton to the bottom-right -->
 
-      <TextView
-          android:id="@+id/tvFinishedRoomLabel"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
-          android:text="Room:"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/tvFinishedTeacherLabel" />
+            <TextView
+                android:id="@+id/tvFinishedRoomLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Room:"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinishedTeacherLabel" />
 
-      <TextView
-          android:id="@+id/finished_time"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="52dp"
-          android:layout_marginTop="4dp"
-          android:text="7:30 am - 9:00 am"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.365"
-          app:layout_constraintStart_toEndOf="@+id/tvFinishedTimeLabel"
-          app:layout_constraintTop_toBottomOf="@+id/Finished_date" />
+            <TextView
+                android:id="@+id/finished_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="4dp"
+                android:text="7:30 am - 9:00 am"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toEndOf="@+id/tvFinishedTimeLabel"
+                app:layout_constraintTop_toBottomOf="@+id/Finished_date" />
 
-      <TextView
-          android:id="@+id/finished_teacher"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="32dp"
-          android:layout_marginTop="4dp"
-          android:text="Mrs. Marlyn Ogoy"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.388"
-          app:layout_constraintStart_toEndOf="@+id/tvFinishedTeacherLabel"
-          app:layout_constraintTop_toBottomOf="@+id/finished_subject" />
+            <TextView
+                android:id="@+id/finished_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Mrs. Marlyn Ogoy"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.388"
+                app:layout_constraintStart_toEndOf="@+id/tvFinishedTeacherLabel"
+                app:layout_constraintTop_toBottomOf="@+id/finished_subject" />
 
-      <TextView
-          android:id="@+id/finished_room"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="44dp"
-          android:layout_marginTop="4dp"
-          android:text="RS 115"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.223"
-          app:layout_constraintStart_toEndOf="@+id/tvFinishedRoomLabel"
-          app:layout_constraintTop_toBottomOf="@+id/finished_teacher" />
+            <TextView
+                android:id="@+id/finished_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="4dp"
+                android:text="RS 115"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.223"
+                app:layout_constraintStart_toEndOf="@+id/tvFinishedRoomLabel"
+                app:layout_constraintTop_toBottomOf="@+id/finished_teacher" />
 
-      <ImageButton
-          android:id="@+id/btStudentList"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
-          android:background="?attr/selectableItemBackgroundBorderless"
-          android:src="@drawable/baseline_list_24"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.173"
-          app:layout_constraintStart_toEndOf="@+id/finished_students_list"
-          app:layout_constraintTop_toBottomOf="@+id/finished_room" />
+            <ImageButton
+                android:id="@+id/btStudentList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_list_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.173"
+                app:layout_constraintStart_toEndOf="@+id/finished_students_list"
+                app:layout_constraintTop_toBottomOf="@+id/finished_room" />
 
-      <TextView
-          android:id="@+id/finished_subject"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="36dp"
-          android:layout_marginTop="4dp"
-          android:text="PED 031"
-          android:textColor="@color/white"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.22"
-          app:layout_constraintStart_toEndOf="@+id/tvFinishedSubjectLabel"
-          app:layout_constraintTop_toBottomOf="@+id/finished_time" />
+            <TextView
+                android:id="@+id/finished_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:text="PED 031"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.22"
+                app:layout_constraintStart_toEndOf="@+id/tvFinishedSubjectLabel"
+                app:layout_constraintTop_toBottomOf="@+id/finished_time" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-  </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

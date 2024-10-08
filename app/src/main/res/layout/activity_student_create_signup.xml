@@ -1,5 +1,4 @@
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -200,10 +199,10 @@
                 android:id="@+id/etMobileNumber"
                 android:layout_width="375dp"
                 android:layout_height="55dp"
+                android:layout_marginTop="28dp"
                 android:background="@drawable/custom_edittext"
                 android:ems="10"
                 android:hint="   Enter your mobile number"
-                android:layout_marginTop="28dp"
                 android:inputType="phone"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
@@ -273,8 +272,8 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:inputType="none"
-                android:text="Date of Birth"
                 android:padding="10dp"
+                android:text="Date of Birth"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/spinnerSex"
                 app:layout_constraintTop_toBottomOf="@+id/etMobileNumber" />

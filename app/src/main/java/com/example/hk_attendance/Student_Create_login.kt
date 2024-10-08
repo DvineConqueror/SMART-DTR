@@ -31,7 +31,7 @@ class Student_Create_login : AppCompatActivity() {
         }
 
         // Redirects for Teacher button
-        btnStudentLoginAccount.setOnClickListener ({
+        btnStudentLoginAccount.setOnClickListener({
             startActivity(
                 Intent(
                     this@Student_Create_login,

@@ -27,8 +27,9 @@ class Student_Create_Account : AppCompatActivity() {
 
         val nextButton: Button = findViewById(R.id.btnNext)
 
-        nextButton.setOnClickListener{
-            Toast.makeText(this, "You have successfully created an account!", Toast.LENGTH_SHORT).show()
+        nextButton.setOnClickListener {
+            Toast.makeText(this, "You have successfully created an account!", Toast.LENGTH_SHORT)
+                .show()
             Handler(Looper.getMainLooper()).postDelayed({
                 val intent = Intent(this, Student_Create_login::class.java)
                 startActivity(intent)
@@ -51,6 +52,7 @@ class Student_Create_Account : AppCompatActivity() {
                 onBackPressed() // This will act like the physical back button
                 true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }

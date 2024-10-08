@@ -95,6 +95,7 @@ class StudentLogin : AppCompatActivity() {
                 onBackPressed() // This will act like the physical back button
                 true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }

@@ -2,49 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="16dp"
     android:background="@color/brightred"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="16dp">
 
     <Button
         android:id="@+id/button1"
         android:layout_width="20dp"
         android:layout_height="50dp"
         android:layout_weight="1"
-        android:drawableBottom="@drawable/baseline_key_24"
-        android:text="change password"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:drawablePadding="0dp"/>
+        android:drawableBottom="@drawable/baseline_key_24"
+        android:drawablePadding="0dp"
+        android:text="change password" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="20dp"
         android:layout_height="50dp"
-        android:drawableBottom="@drawable/baseline_account_circle_24"
         android:layout_weight="1"
-        android:text="user details"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:drawablePadding="0dp"/>
+        android:drawableBottom="@drawable/baseline_account_circle_24"
+        android:drawablePadding="0dp"
+        android:text="user details" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="20dp"
         android:layout_height="50dp"
-        android:drawableBottom="@drawable/baseline_history_24"
         android:layout_weight="1"
-        android:text="history"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:drawablePadding="0dp"/>
+        android:drawableBottom="@drawable/baseline_history_24"
+        android:drawablePadding="0dp"
+        android:text="history" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="20dp"
         android:layout_height="50dp"
         android:layout_weight="1"
-        android:drawableBottom="@drawable/baseline_logout_24"
-        android:text="log out"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawableBottom="@drawable/baseline_logout_24"
         android:drawablePadding="0dp"
-        />
+        android:text="log out" />
 </LinearLayout>

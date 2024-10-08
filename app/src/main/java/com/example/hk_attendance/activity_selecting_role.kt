@@ -30,7 +30,7 @@ class activity_selecting_role : AppCompatActivity() {
         }
 
         // Redirects for Teacher button
-        btnTeacher.setOnClickListener ({
+        btnTeacher.setOnClickListener({
             startActivity(
                 Intent(
                     this@activity_selecting_role,
