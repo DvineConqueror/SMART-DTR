@@ -49,17 +49,6 @@
     <string name="teacher_id">teacher id</string>
     <string name="teacher_email">teacher email</string>
     <string name="create_login_text">Make Daily Time Record management more efficient and accessible</string>
-    <string name="title_activity_teacher_login">Teacher_login</string>
 
-    <string-array name="sex_options">
-        <item>Male</item>
-        <item>Female</item>
-    </string-array>
-
-    <string-array name="year_level_options">
-        <item>2nd Year</item>
-        <item>3rd Year</item>
-        <item>4th Year</item>
-    </string-array>
 
 </resources>
