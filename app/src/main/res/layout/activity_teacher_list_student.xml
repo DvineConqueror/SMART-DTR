@@ -6,6 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".student_list">
 
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select all"
+        android:textColor="@color/brightred"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text=""
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
+
     <ImageView
         android:id="@+id/top_wave"
         android:layout_width="match_parent"
@@ -34,6 +62,7 @@
         android:id="@+id/recycler_dutySchedule"
         android:layout_width="393dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/student_list_label"
